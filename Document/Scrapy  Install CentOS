@@ -1,0 +1,27 @@
+# pip install 
+$ sudo yum install epel-release
+$ sudo yum -y install python-pip
+
+
+# scrapy install
+$ yum install python-pip -y
+$ yum install python-devel -y
+$ yum install gcc gcc-devel -y
+$ yum install libxml2 libxml2-devel -y
+$ yum install libxslt libxslt-devel -y
+$ yum install openssl openssl-devel -y
+$ yum install libffi libffi-devel -y
+$ pip install lxml
+$ pip install scrapy
+
+
+# python install
+# version check
+$ python -v
+
+# python pakage search
+$ yum search python36
+# latest python 
+$ yum install -y python36u python36u-libs python36u-devel python36u-pip
+
+
