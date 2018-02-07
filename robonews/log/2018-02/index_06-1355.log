@@ -1,0 +1,2267 @@
+주식실시간크롤링을 시작합니다.
+2018-02-06 13:55:02 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: robonews)
+2018-02-06 13:55:02 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.3.1, w3lib 1.19.0, Twisted 17.1.0, Python 2.7.6 (default, Feb  2 2018, 13:27:09) - [GCC 4.4.7 20120313 (Red Hat 4.4.7-18)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Linux-2.6.32-642.11.1.el6.x86_64-x86_64-with-centos-6.9-Final
+2018-02-06 13:55:02 [scrapy.crawler] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'robonews.spiders', 'FEED_URI': 'store/2018-02/index_06-1355.json', 'SPIDER_MODULES': ['robonews.spiders'], 'BOT_NAME': 'robonews', 'ROBOTSTXT_OBEY': True, 'FEED_FORMAT': 'json', 'FEED_EXPORT_ENCODING': 'utf-8'}
+2018-02-06 13:55:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-02-06 13:55:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-02-06 13:55:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-02-06 13:55:02 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-02-06 13:55:02 [scrapy.core.engine] INFO: Spider opened
+2018-02-06 13:55:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-02-06 13:55:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/robots.txt> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=007070> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=114090> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000120> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=027410> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=001040> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=078930> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=030200> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=007070>
+{'ecode': [u'007070'],
+ 'ename': [u'GS\ub9ac\ud14c\uc77c'],
+ 'percent': [u'-3.79\uff05'],
+ 'rmoney': u'7,061',
+ 'stock': [u'36,850'],
+ 'time': '13:55:04',
+ 'trade': u'191,065',
+ 'trade_rate': [u'(94%)'],
+ 'updown': [u'1,450']}
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=097950> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=114090>
+{'ecode': [u'114090'],
+ 'ename': [u'GKL'],
+ 'percent': [u'-0.88\uff05'],
+ 'rmoney': u'5,999',
+ 'stock': [u'28,050'],
+ 'time': '13:55:04',
+ 'trade': u'217,292',
+ 'trade_rate': [u'(43%)'],
+ 'updown': [u'250']}
+2018-02-06 13:55:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000120>
+{'ecode': [u'000120'],
+ 'ename': [u'CJ\ub300\ud55c\ud1b5\uc6b4'],
+ 'percent': [u'-2.82\uff05'],
+ 'rmoney': u'7,367',
+ 'stock': [u'138,000'],
+ 'time': '13:55:04',
+ 'trade': u'53,404',
+ 'trade_rate': [u'(93%)'],
+ 'updown': [u'4,000']}
+2018-02-06 13:55:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=027410>
+{'ecode': [u'027410'],
+ 'ename': [u'BGF'],
+ 'percent': [u'-2.34\uff05'],
+ 'rmoney': u'4,739',
+ 'stock': [u'14,600'],
+ 'time': '13:55:04',
+ 'trade': u'326,181',
+ 'trade_rate': [u'(89%)'],
+ 'updown': [u'350']}
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=034220> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=001060> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=105560> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=001040>
+{'ecode': [u'001040'],
+ 'ename': [u'CJ'],
+ 'percent': [u'-2.01\uff05'],
+ 'rmoney': u'15,763',
+ 'stock': [u'170,500'],
+ 'time': '13:55:04',
+ 'trade': u'93,432',
+ 'trade_rate': [u'(87%)'],
+ 'updown': [u'3,500']}
+2018-02-06 13:55:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=078930>
+{'ecode': [u'078930'],
+ 'ename': [u'GS'],
+ 'percent': [u'-2.52\uff05'],
+ 'rmoney': u'11,862',
+ 'stock': [u'65,800'],
+ 'time': '13:55:04',
+ 'trade': u'181,979',
+ 'trade_rate': [u'(81%)'],
+ 'updown': [u'1,700']}
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=033780> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=003550> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=093050> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=138930> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=002380> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=030200>
+{'ecode': [u'030200'],
+ 'ename': [u'KT'],
+ 'percent': [u'-2.04\uff05'],
+ 'rmoney': u'34,688',
+ 'stock': [u'28,850'],
+ 'time': '13:55:04',
+ 'trade': u'1,196,144',
+ 'trade_rate': [u'(164%)'],
+ 'updown': [u'600']}
+2018-02-06 13:55:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=097950>
+{'ecode': [u'097950'],
+ 'ename': [u'CJ\uc81c\uc77c\uc81c\ub2f9'],
+ 'percent': [u'-2.29\uff05'],
+ 'rmoney': u'15,836',
+ 'stock': [u'341,000'],
+ 'time': '13:55:04',
+ 'trade': u'46,415',
+ 'trade_rate': [u'(87%)'],
+ 'updown': [u'8,000']}
+2018-02-06 13:55:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=034220>
+{'ecode': [u'034220'],
+ 'ename': [u'LG\ub514\uc2a4\ud50c\ub808\uc774'],
+ 'percent': [u'-2.44\uff05'],
+ 'rmoney': u'69,543',
+ 'stock': [u'30,000'],
+ 'time': '13:55:04',
+ 'trade': u'2,312,609',
+ 'trade_rate': [u'(111%)'],
+ 'updown': [u'750']}
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=032640> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=011070> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=001060>
+{'ecode': [u'001060'],
+ 'ename': [u'JW\uc911\uc678\uc81c\uc57d'],
+ 'percent': [u'-3.16\uff05'],
+ 'rmoney': u'8,998',
+ 'stock': [u'44,500'],
+ 'time': '13:55:04',
+ 'trade': u'203,369',
+ 'trade_rate': [u'(108%)'],
+ 'updown': [u'1,450']}
+2018-02-06 13:55:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=105560>
+{'ecode': [u'105560'],
+ 'ename': [u'KB\uae08\uc735'],
+ 'percent': [u'-5.47\uff05'],
+ 'rmoney': u'83,518',
+ 'stock': [u'64,000'],
+ 'time': '13:55:04',
+ 'trade': u'1,288,099',
+ 'trade_rate': [u'(91%)'],
+ 'updown': [u'3,700']}
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=051910> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=033780>
+{'ecode': [u'033780'],
+ 'ename': [u'KT&G'],
+ 'percent': [u'-0.96\uff05'],
+ 'rmoney': u'38,228',
+ 'stock': [u'103,000'],
+ 'time': '13:55:04',
+ 'trade': u'367,214',
+ 'trade_rate': [u'(91%)'],
+ 'updown': [u'1,000']}
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=001120> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=066570> (referer: None)
+2018-02-06 13:55:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=003550>
+{'ecode': [u'003550'],
+ 'ename': [u'LG'],
+ 'percent': [u'-2.95\uff05'],
+ 'rmoney': u'31,119',
+ 'stock': [u'85,600'],
+ 'time': '13:55:04',
+ 'trade': u'361,853',
+ 'trade_rate': [u'(116%)'],
+ 'updown': [u'2,600']}
+2018-02-06 13:55:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=093050>
+{'ecode': [u'093050'],
+ 'ename': [u'LF'],
+ 'percent': [u'-1.89\uff05'],
+ 'rmoney': u'1,585',
+ 'stock': [u'31,100'],
+ 'time': '13:55:04',
+ 'trade': u'51,013',
+ 'trade_rate': [u'(130%)'],
+ 'updown': [u'600']}
+2018-02-06 13:55:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=138930>
+{'ecode': [u'138930'],
+ 'ename': [u'BNK\uae08\uc735\uc9c0\uc8fc'],
+ 'percent': [u'-4.69\uff05'],
+ 'rmoney': u'12,548',
+ 'stock': [u'10,150'],
+ 'time': '13:55:04',
+ 'trade': u'1,224,347',
+ 'trade_rate': [u'(82%)'],
+ 'updown': [u'500']}
+2018-02-06 13:55:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=002380>
+{'ecode': [u'002380'],
+ 'ename': [u'KCC'],
+ 'percent': [u'-2.85\uff05'],
+ 'rmoney': u'6,190',
+ 'stock': [u'391,500'],
+ 'time': '13:55:04',
+ 'trade': u'15,752',
+ 'trade_rate': [u'(96%)'],
+ 'updown': [u'11,500']}
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=032640>
+{'ecode': [u'032640'],
+ 'ename': [u'LG\uc720\ud50c\ub7ec\uc2a4'],
+ 'percent': [u'-1.81\uff05'],
+ 'rmoney': u'19,364',
+ 'stock': [u'13,600'],
+ 'time': '13:55:04',
+ 'trade': u'1,434,901',
+ 'trade_rate': [u'(84%)'],
+ 'updown': [u'250']}
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=011070>
+{'ecode': [u'011070'],
+ 'ename': [u'LG\uc774\ub178\ud14d'],
+ 'percent': [u'-3.24\uff05'],
+ 'rmoney': u'32,036',
+ 'stock': [u'119,500'],
+ 'time': '13:55:05',
+ 'trade': u'269,694',
+ 'trade_rate': [u'(109%)'],
+ 'updown': [u'4,000']}
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=051910>
+{'ecode': [u'051910'],
+ 'ename': [u'LG\ud654\ud559'],
+ 'percent': [u'-1.15\uff05'],
+ 'rmoney': u'120,543',
+ 'stock': [u'385,500'],
+ 'time': '13:55:05',
+ 'trade': u'319,441',
+ 'trade_rate': [u'(80%)'],
+ 'updown': [u'4,500']}
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=006260> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=108670> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=001120>
+{'ecode': [u'001120'],
+ 'ename': [u'LG\uc0c1\uc0ac'],
+ 'percent': [u'-2.56\uff05'],
+ 'rmoney': u'6,226',
+ 'stock': [u'28,500'],
+ 'time': '13:55:05',
+ 'trade': u'218,783',
+ 'trade_rate': [u'(81%)'],
+ 'updown': [u'750']}
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=066570>
+{'ecode': [u'066570'],
+ 'ename': [u'LG\uc804\uc790'],
+ 'percent': [u'-2.56\uff05'],
+ 'rmoney': u'77,374',
+ 'stock': [u'95,200'],
+ 'time': '13:55:05',
+ 'trade': u'816,489',
+ 'trade_rate': [u'(109%)'],
+ 'updown': [u'2,500']}
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=010060> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=005490> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=035420> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=005940> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=010120> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=006260>
+{'ecode': [u'006260'],
+ 'ename': [u'LS'],
+ 'percent': [u'-2.10\uff05'],
+ 'rmoney': u'7,779',
+ 'stock': [u'74,500'],
+ 'time': '13:55:05',
+ 'trade': u'105,211',
+ 'trade_rate': [u'(148%)'],
+ 'updown': [u'1,600']}
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=108670>
+{'ecode': [u'108670'],
+ 'ename': [u'LG\ud558\uc6b0\uc2dc\uc2a4'],
+ 'percent': [u'-2.67\uff05'],
+ 'rmoney': u'8,262',
+ 'stock': [u'87,400'],
+ 'time': '13:55:05',
+ 'trade': u'94,223',
+ 'trade_rate': [u'(171%)'],
+ 'updown': [u'2,400']}
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=010060>
+{'ecode': [u'010060'],
+ 'ename': [u'OCI'],
+ 'percent': [u'+3.96\uff05'],
+ 'rmoney': u'101,324',
+ 'stock': [u'157,500'],
+ 'time': '13:55:05',
+ 'trade': u'647,745',
+ 'trade_rate': [u'(227%)'],
+ 'updown': [u'6,000']}
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=034120> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=005490>
+{'ecode': [u'005490'],
+ 'ename': [u'POSCO'],
+ 'percent': [u'-2.62\uff05'],
+ 'rmoney': u'79,126',
+ 'stock': [u'371,500'],
+ 'time': '13:55:05',
+ 'trade': u'212,030',
+ 'trade_rate': [u'(102%)'],
+ 'updown': [u'10,000']}
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=035420>
+{'ecode': [u'035420'],
+ 'ename': [u'NAVER'],
+ 'percent': [u'-3.64\uff05'],
+ 'rmoney': u'87,094',
+ 'stock': [u'847,000'],
+ 'time': '13:55:05',
+ 'trade': u'101,985',
+ 'trade_rate': [u'(105%)'],
+ 'updown': [u'32,000']}
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=001740> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=005940>
+{'ecode': [u'005940'],
+ 'ename': [u'NH\ud22c\uc790\uc99d\uad8c'],
+ 'percent': [u'-1.60\uff05'],
+ 'rmoney': u'21,699',
+ 'stock': [u'15,400'],
+ 'time': '13:55:05',
+ 'trade': u'1,435,968',
+ 'trade_rate': [u'(97%)'],
+ 'updown': [u'250']}
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=010120>
+{'ecode': [u'010120'],
+ 'ename': [u'LS\uc0b0\uc804'],
+ 'percent': [u'-3.76\uff05'],
+ 'rmoney': u'10,018',
+ 'stock': [u'56,300'],
+ 'time': '13:55:05',
+ 'trade': u'179,270',
+ 'trade_rate': [u'(62%)'],
+ 'updown': [u'2,200']}
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=034120>
+{'ecode': [u'034120'],
+ 'ename': [u'SBS'],
+ 'percent': [u'-3.95\uff05'],
+ 'rmoney': u'2,034',
+ 'stock': [u'25,500'],
+ 'time': '13:55:05',
+ 'trade': u'79,731',
+ 'trade_rate': [u'(124%)'],
+ 'updown': [u'1,050']}
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=096770> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=001740>
+{'ecode': [u'001740'],
+ 'ename': [u'SK\ub124\ud2b8\uc6cd\uc2a4'],
+ 'percent': [u'-2.69\uff05'],
+ 'rmoney': u'7,935',
+ 'stock': [u'6,150'],
+ 'time': '13:55:05',
+ 'trade': u'1,289,247',
+ 'trade_rate': [u'(151%)'],
+ 'updown': [u'170']}
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=011790> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=017670> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=006120> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=096770>
+{'ecode': [u'096770'],
+ 'ename': [u'SK\uc774\ub178\ubca0\uc774\uc158'],
+ 'percent': [u'-3.27\uff05'],
+ 'rmoney': u'45,276',
+ 'stock': [u'192,000'],
+ 'time': '13:55:05',
+ 'trade': u'234,913',
+ 'trade_rate': [u'(79%)'],
+ 'updown': [u'6,500']}
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=011790>
+{'ecode': [u'011790'],
+ 'ename': [u'SKC'],
+ 'percent': [u'-6.65\uff05'],
+ 'rmoney': u'25,924',
+ 'stock': [u'38,600'],
+ 'time': '13:55:05',
+ 'trade': u'678,140',
+ 'trade_rate': [u'(267%)'],
+ 'updown': [u'2,750']}
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=017670>
+{'ecode': [u'017670'],
+ 'ename': [u'SK\ud154\ub808\ucf64'],
+ 'percent': [u'-2.50\uff05'],
+ 'rmoney': u'33,600',
+ 'stock': [u'253,500'],
+ 'time': '13:55:05',
+ 'trade': u'132,404',
+ 'trade_rate': [u'(82%)'],
+ 'updown': [u'6,500']}
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=005610> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=035250> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=006120>
+{'ecode': [u'006120'],
+ 'ename': [u'SK\ub514\uc2a4\ucee4\ubc84\ub9ac'],
+ 'percent': [u'-3.14\uff05'],
+ 'rmoney': u'7,808',
+ 'stock': [u'49,400'],
+ 'time': '13:55:05',
+ 'trade': u'157,928',
+ 'trade_rate': [u'(95%)'],
+ 'updown': [u'1,600']}
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=034730> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000660> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=005610>
+{'ecode': [u'005610'],
+ 'ename': [u'SPC\uc0bc\ub9bd'],
+ 'percent': [u'-3.38\uff05'],
+ 'rmoney': u'2,820',
+ 'stock': [u'143,000'],
+ 'time': '13:55:05',
+ 'trade': u'19,795',
+ 'trade_rate': [u'(103%)'],
+ 'updown': [u'5,000']}
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000050> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=035250>
+{'ecode': [u'035250'],
+ 'ename': [u'\uac15\uc6d0\ub79c\ub4dc'],
+ 'percent': [u'-1.24\uff05'],
+ 'rmoney': u'10,161',
+ 'stock': [u'31,800'],
+ 'time': '13:55:05',
+ 'trade': u'320,830',
+ 'trade_rate': [u'(91%)'],
+ 'updown': [u'400']}
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=010130> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=009290> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=073240> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=011780> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=034730>
+{'ecode': [u'034730'],
+ 'ename': [u'SK'],
+ 'percent': [u'-2.93\uff05'],
+ 'rmoney': u'35,292',
+ 'stock': [u'298,500'],
+ 'time': '13:55:05',
+ 'trade': u'118,935',
+ 'trade_rate': [u'(107%)'],
+ 'updown': [u'9,000']}
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000270> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=002240> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000660>
+{'ecode': [u'000660'],
+ 'ename': [u'SK\ud558\uc774\ub2c9\uc2a4'],
+ 'percent': [u'-1.42\uff05'],
+ 'rmoney': u'263,880',
+ 'stock': [u'69,200'],
+ 'time': '13:55:05',
+ 'trade': u'3,827,356',
+ 'trade_rate': [u'(94%)'],
+ 'updown': [u'1,000']}
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000050>
+{'ecode': [u'000050'],
+ 'ename': [u'\uacbd\ubc29'],
+ 'percent': [u'-2.50\uff05'],
+ 'rmoney': u'350',
+ 'stock': [u'13,650'],
+ 'time': '13:55:05',
+ 'trade': u'25,418',
+ 'trade_rate': [u'(69%)'],
+ 'updown': [u'350']}
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=010130>
+{'ecode': [u'010130'],
+ 'ename': [u'\uace0\ub824\uc544\uc5f0'],
+ 'percent': [u'-1.11\uff05'],
+ 'rmoney': u'18,341',
+ 'stock': [u'490,500'],
+ 'time': '13:55:05',
+ 'trade': u'37,587',
+ 'trade_rate': [u'(92%)'],
+ 'updown': [u'5,500']}
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=009290>
+{'ecode': [u'009290'],
+ 'ename': [u'\uad11\ub3d9\uc81c\uc57d'],
+ 'percent': [u'-1.90\uff05'],
+ 'rmoney': u'1,531',
+ 'stock': [u'9,280'],
+ 'time': '13:55:05',
+ 'trade': u'165,799',
+ 'trade_rate': [u'(88%)'],
+ 'updown': [u'180']}
+2018-02-06 13:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=024110> (referer: None)
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=073240>
+{'ecode': [u'073240'],
+ 'ename': [u'\uae08\ud638\ud0c0\uc774\uc5b4'],
+ 'percent': [u'-5.25\uff05'],
+ 'rmoney': u'21,380',
+ 'stock': [u'6,500'],
+ 'time': '13:55:05',
+ 'trade': u'3,251,797',
+ 'trade_rate': [u'(46%)'],
+ 'updown': [u'360']}
+2018-02-06 13:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=011780>
+{'ecode': [u'011780'],
+ 'ename': [u'\uae08\ud638\uc11d\uc720'],
+ 'percent': [u'-4.39\uff05'],
+ 'rmoney': u'23,309',
+ 'stock': [u'98,000'],
+ 'time': '13:55:05',
+ 'trade': u'240,466',
+ 'trade_rate': [u'(142%)'],
+ 'updown': [u'4,500']}
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=006280> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000270>
+{'ecode': [u'000270'],
+ 'ename': [u'\uae30\uc544\ucc28'],
+ 'percent': [u'-2.29\uff05'],
+ 'rmoney': u'35,915',
+ 'stock': [u'34,150'],
+ 'time': '13:55:05',
+ 'trade': u'1,046,628',
+ 'trade_rate': [u'(60%)'],
+ 'updown': [u'800']}
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=002240>
+{'ecode': [u'002240'],
+ 'ename': [u'\uace0\ub824\uc81c\uac15'],
+ 'percent': [u'+0.89\uff05'],
+ 'rmoney': u'761',
+ 'stock': [u'33,900'],
+ 'time': '13:55:05',
+ 'trade': u'22,652',
+ 'trade_rate': [u'(148%)'],
+ 'updown': [u'300']}
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=024110>
+{'ecode': [u'024110'],
+ 'ename': [u'\uae30\uc5c5\uc740\ud589'],
+ 'percent': [u'-4.68\uff05'],
+ 'rmoney': u'19,603',
+ 'stock': [u'16,300'],
+ 'time': '13:55:06',
+ 'trade': u'1,188,658',
+ 'trade_rate': [u'(79%)'],
+ 'updown': [u'800']}
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=003920> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=025860> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=002350> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=006280>
+{'ecode': [u'006280'],
+ 'ename': [u'\ub179\uc2ed\uc790'],
+ 'percent': [u'-3.37\uff05'],
+ 'rmoney': u'14,248',
+ 'stock': [u'201,000'],
+ 'time': '13:55:06',
+ 'trade': u'71,308',
+ 'trade_rate': [u'(87%)'],
+ 'updown': [u'7,000']}
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=003920>
+{'ecode': [u'003920'],
+ 'ename': [u'\ub0a8\uc591\uc720\uc5c5'],
+ 'percent': [u'-2.13\uff05'],
+ 'rmoney': u'523',
+ 'stock': [u'690,000'],
+ 'time': '13:55:06',
+ 'trade': u'754',
+ 'trade_rate': [u'(25%)'],
+ 'updown': [u'15,000']}
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=025860>
+{'ecode': [u'025860'],
+ 'ename': [u'\ub0a8\ud574\ud654\ud559'],
+ 'percent': [u'+1.19\uff05'],
+ 'rmoney': u'6,042',
+ 'stock': [u'12,750'],
+ 'time': '13:55:06',
+ 'trade': u'487,829',
+ 'trade_rate': [u'(128%)'],
+ 'updown': [u'150']}
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=001680> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000210> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=019680> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=002350>
+{'ecode': [u'002350'],
+ 'ename': [u'\ub125\uc13c\ud0c0\uc774\uc5b4'],
+ 'percent': [u'-2.02\uff05'],
+ 'rmoney': u'1,474',
+ 'stock': [u'12,150'],
+ 'time': '13:55:06',
+ 'trade': u'121,067',
+ 'trade_rate': [u'(101%)'],
+ 'updown': [u'250']}
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=047040> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=001680>
+{'ecode': [u'001680'],
+ 'ename': [u'\ub300\uc0c1'],
+ 'percent': [u'-2.17\uff05'],
+ 'rmoney': u'3,158',
+ 'stock': [u'24,750'],
+ 'time': '13:55:06',
+ 'trade': u'128,478',
+ 'trade_rate': [u'(73%)'],
+ 'updown': [u'550']}
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000210>
+{'ecode': [u'000210'],
+ 'ename': [u'\ub300\ub9bc\uc0b0\uc5c5'],
+ 'percent': [u'-3.31\uff05'],
+ 'rmoney': u'21,801',
+ 'stock': [u'76,000'],
+ 'time': '13:55:06',
+ 'trade': u'286,423',
+ 'trade_rate': [u'(82%)'],
+ 'updown': [u'2,600']}
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=019680>
+{'ecode': [u'019680'],
+ 'ename': [u'\ub300\uad50'],
+ 'percent': [u'-2.06\uff05'],
+ 'rmoney': u'551',
+ 'stock': [u'8,080'],
+ 'time': '13:55:06',
+ 'trade': u'68,263',
+ 'trade_rate': [u'(86%)'],
+ 'updown': [u'170']}
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=006650> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=069620> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=047040>
+{'ecode': [u'047040'],
+ 'ename': [u'\ub300\uc6b0\uac74\uc124'],
+ 'percent': [u'-5.48\uff05'],
+ 'rmoney': u'19,360',
+ 'stock': [u'5,690'],
+ 'time': '13:55:06',
+ 'trade': u'3,398,942',
+ 'trade_rate': [u'(109%)'],
+ 'updown': [u'330']}
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=003490> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=001230> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=006650>
+{'ecode': [u'006650'],
+ 'ename': [u'\ub300\ud55c\uc720\ud654'],
+ 'percent': [u'-0.59\uff05'],
+ 'rmoney': u'13,944',
+ 'stock': [u'335,500'],
+ 'time': '13:55:06',
+ 'trade': u'42,590',
+ 'trade_rate': [u'(62%)'],
+ 'updown': [u'2,000']}
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=069620>
+{'ecode': [u'069620'],
+ 'ename': [u'\ub300\uc6c5\uc81c\uc57d'],
+ 'percent': [u'-2.11\uff05'],
+ 'rmoney': u'17,561',
+ 'stock': [u'162,500'],
+ 'time': '13:55:06',
+ 'trade': u'109,920',
+ 'trade_rate': [u'(129%)'],
+ 'updown': [u'3,500']}
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=005830> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=003490>
+{'ecode': [u'003490'],
+ 'ename': [u'\ub300\ud55c\ud56d\uacf5'],
+ 'percent': [u'-2.08\uff05'],
+ 'rmoney': u'28,373',
+ 'stock': [u'35,300'],
+ 'time': '13:55:06',
+ 'trade': u'816,094',
+ 'trade_rate': [u'(94%)'],
+ 'updown': [u'750']}
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=170900> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=001230>
+{'ecode': [u'001230'],
+ 'ename': [u'\ub3d9\uad6d\uc81c\uac15'],
+ 'percent': [u'-2.11\uff05'],
+ 'rmoney': u'4,735',
+ 'stock': [u'11,600'],
+ 'time': '13:55:06',
+ 'trade': u'411,199',
+ 'trade_rate': [u'(73%)'],
+ 'updown': [u'250']}
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=005830>
+{'ecode': [u'005830'],
+ 'ename': [u'DB\uc190\ud574\ubcf4\ud5d8'],
+ 'percent': [u'-3.97\uff05'],
+ 'rmoney': u'7,678',
+ 'stock': [u'70,200'],
+ 'time': '13:55:06',
+ 'trade': u'108,444',
+ 'trade_rate': [u'(97%)'],
+ 'updown': [u'2,900']}
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=001520> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=049770> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=170900>
+{'ecode': [u'170900'],
+ 'ename': [u'\ub3d9\uc544\uc5d0\uc2a4\ud2f0'],
+ 'percent': [u'-1.37\uff05'],
+ 'rmoney': u'5,530',
+ 'stock': [u'108,000'],
+ 'time': '13:55:06',
+ 'trade': u'51,769',
+ 'trade_rate': [u'(78%)'],
+ 'updown': [u'1,500']}
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=014820> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000150> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=001520>
+{'ecode': [u'001520'],
+ 'ename': [u'\ub3d9\uc591'],
+ 'percent': [u'-2.73\uff05'],
+ 'rmoney': u'1,566',
+ 'stock': [u'2,140'],
+ 'time': '13:55:06',
+ 'trade': u'740,811',
+ 'trade_rate': [u'(116%)'],
+ 'updown': [u'60']}
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=049770>
+{'ecode': [u'049770'],
+ 'ename': [u'\ub3d9\uc6d0F&B'],
+ 'percent': [u'-1.63\uff05'],
+ 'rmoney': u'738',
+ 'stock': [u'241,500'],
+ 'time': '13:55:06',
+ 'trade': u'3,072',
+ 'trade_rate': [u'(77%)'],
+ 'updown': [u'4,000']}
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=034020> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=014820>
+{'ecode': [u'014820'],
+ 'ename': [u'\ub3d9\uc6d0\uc2dc\uc2a4\ud15c\uc988'],
+ 'percent': [u'+2.41\uff05'],
+ 'rmoney': u'1,456',
+ 'stock': [u'51,000'],
+ 'time': '13:55:06',
+ 'trade': u'29,054',
+ 'trade_rate': [u'(186%)'],
+ 'updown': [u'1,200']}
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000150>
+{'ecode': [u'000150'],
+ 'ename': [u'\ub450\uc0b0'],
+ 'percent': [u'-4.07\uff05'],
+ 'rmoney': u'5,658',
+ 'stock': [u'106,000'],
+ 'time': '13:55:06',
+ 'trade': u'53,484',
+ 'trade_rate': [u'(109%)'],
+ 'updown': [u'4,500']}
+2018-02-06 13:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=042670> (referer: None)
+2018-02-06 13:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=034020>
+{'ecode': [u'034020'],
+ 'ename': [u'\ub450\uc0b0\uc911\uacf5\uc5c5'],
+ 'percent': [u'-3.17\uff05'],
+ 'rmoney': u'8,503',
+ 'stock': [u'15,250'],
+ 'time': '13:55:06',
+ 'trade': u'556,408',
+ 'trade_rate': [u'(99%)'],
+ 'updown': [u'500']}
+2018-02-06 13:55:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=023530> (referer: None)
+2018-02-06 13:55:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=042670>
+{'ecode': [u'042670'],
+ 'ename': [u'\ub450\uc0b0\uc778\ud504\ub77c\ucf54\uc5b4'],
+ 'percent': [u'0.00\uff05'],
+ 'rmoney': u'24,636',
+ 'stock': [u'10,650'],
+ 'time': '13:55:07',
+ 'trade': u'2,375,474',
+ 'trade_rate': [u'(168%)'],
+ 'updown': [u'0']}
+2018-02-06 13:55:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=023530>
+{'ecode': [u'023530'],
+ 'ename': [u'\ub86f\ub370\uc1fc\ud551'],
+ 'percent': [u'-2.78\uff05'],
+ 'rmoney': u'47,082',
+ 'stock': [u'244,500'],
+ 'time': '13:55:07',
+ 'trade': u'195,006',
+ 'trade_rate': [u'(108%)'],
+ 'updown': [u'7,000']}
+2018-02-06 13:55:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=004000> (referer: None)
+2018-02-06 13:55:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=004990> (referer: None)
+2018-02-06 13:55:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=004000>
+{'ecode': [u'004000'],
+ 'ename': [u'\ub86f\ub370\uc815\ubc00\ud654\ud559'],
+ 'percent': [u'-1.89\uff05'],
+ 'rmoney': u'7,325',
+ 'stock': [u'72,500'],
+ 'time': '13:55:07',
+ 'trade': u'102,788',
+ 'trade_rate': [u'(95%)'],
+ 'updown': [u'1,400']}
+2018-02-06 13:55:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=004990>
+{'ecode': [u'004990'],
+ 'ename': [u'\ub86f\ub370\uc9c0\uc8fc'],
+ 'percent': [u'-3.35\uff05'],
+ 'rmoney': u'14,348',
+ 'stock': [u'66,300'],
+ 'time': '13:55:07',
+ 'trade': u'216,026',
+ 'trade_rate': [u'(114%)'],
+ 'updown': [u'2,300']}
+2018-02-06 13:55:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=005300> (referer: None)
+2018-02-06 13:55:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=005300>
+{'ecode': [u'005300'],
+ 'ename': [u'\ub86f\ub370\uce60\uc131'],
+ 'percent': [u'-2.65\uff05'],
+ 'rmoney': u'4,424',
+ 'stock': [u'1,541,000'],
+ 'time': '13:55:07',
+ 'trade': u'2,809',
+ 'trade_rate': [u'(135%)'],
+ 'updown': [u'42,000']}
+2018-02-06 13:55:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=008060> (referer: None)
+2018-02-06 13:55:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=008060>
+{'ecode': [u'008060'],
+ 'ename': [u'\ub300\ub355\uc804\uc790'],
+ 'percent': [u'-2.74\uff05'],
+ 'rmoney': u'1,526',
+ 'stock': [u'8,880'],
+ 'time': '13:55:10',
+ 'trade': u'171,918',
+ 'trade_rate': [u'(131%)'],
+ 'updown': [u'250']}
+2018-02-06 13:55:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=064960> (referer: None)
+2018-02-06 13:55:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=204320> (referer: None)
+2018-02-06 13:55:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=064960>
+{'ecode': [u'064960'],
+ 'ename': [u'S&T\ubaa8\ud2f0\ube0c'],
+ 'percent': [u'-2.81\uff05'],
+ 'rmoney': u'2,090',
+ 'stock': [u'48,500'],
+ 'time': '13:55:10',
+ 'trade': u'42,913',
+ 'trade_rate': [u'(47%)'],
+ 'updown': [u'1,400']}
+2018-02-06 13:55:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=204320>
+{'ecode': [u'204320'],
+ 'ename': [u'\ub9cc\ub3c4'],
+ 'percent': [u'-0.18\uff05'],
+ 'rmoney': u'13,449',
+ 'stock': [u'276,000'],
+ 'time': '13:55:10',
+ 'trade': u'48,703',
+ 'trade_rate': [u'(65%)'],
+ 'updown': [u'500']}
+2018-02-06 13:55:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000640> (referer: None)
+2018-02-06 13:55:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=006800> (referer: None)
+2018-02-06 13:55:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000640>
+{'ecode': [u'000640'],
+ 'ename': [u'\ub3d9\uc544\uc3d8\uc2dc\uc624\ud640\ub529\uc2a4'],
+ 'percent': [u'-2.48\uff05'],
+ 'rmoney': u'3,687',
+ 'stock': [u'137,500'],
+ 'time': '13:55:10',
+ 'trade': u'27,166',
+ 'trade_rate': [u'(152%)'],
+ 'updown': [u'3,500']}
+2018-02-06 13:55:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=115390> (referer: None)
+2018-02-06 13:55:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=003000> (referer: None)
+2018-02-06 13:55:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=003850> (referer: None)
+2018-02-06 13:55:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=006800>
+{'ecode': [u'006800'],
+ 'ename': [u'\ubbf8\ub798\uc5d0\uc14b\ub300\uc6b0'],
+ 'percent': [u'-3.33\uff05'],
+ 'rmoney': u'43,062',
+ 'stock': [u'10,150'],
+ 'time': '13:55:10',
+ 'trade': u'4,276,558',
+ 'trade_rate': [u'(146%)'],
+ 'updown': [u'350']}
+2018-02-06 13:55:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=005180> (referer: None)
+2018-02-06 13:55:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=115390>
+{'ecode': [u'115390'],
+ 'ename': [u'\ub77d\uc564\ub77d'],
+ 'percent': [u'-5.05\uff05'],
+ 'rmoney': u'7,599',
+ 'stock': [u'24,450'],
+ 'time': '13:55:10',
+ 'trade': u'310,613',
+ 'trade_rate': [u'(194%)'],
+ 'updown': [u'1,300']}
+2018-02-06 13:55:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=003000>
+{'ecode': [u'003000'],
+ 'ename': [u'\ubd80\uad11\uc57d\ud488'],
+ 'percent': [u'-3.28\uff05'],
+ 'rmoney': u'4,888',
+ 'stock': [u'23,600'],
+ 'time': '13:55:10',
+ 'trade': u'208,564',
+ 'trade_rate': [u'(53%)'],
+ 'updown': [u'800']}
+2018-02-06 13:55:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=003850>
+{'ecode': [u'003850'],
+ 'ename': [u'\ubcf4\ub839\uc81c\uc57d'],
+ 'percent': [u'-1.92\uff05'],
+ 'rmoney': u'8,317',
+ 'stock': [u'51,000'],
+ 'time': '13:55:10',
+ 'trade': u'166,151',
+ 'trade_rate': [u'(130%)'],
+ 'updown': [u'1,000']}
+2018-02-06 13:55:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=006400> (referer: None)
+2018-02-06 13:55:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=032830> (referer: None)
+2018-02-06 13:55:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=005180>
+{'ecode': [u'005180'],
+ 'ename': [u'\ube59\uadf8\ub808'],
+ 'percent': [u'-1.72\uff05'],
+ 'rmoney': u'738',
+ 'stock': [u'62,800'],
+ 'time': '13:55:10',
+ 'trade': u'11,776',
+ 'trade_rate': [u'(87%)'],
+ 'updown': [u'1,100']}
+2018-02-06 13:55:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=006400>
+{'ecode': [u'006400'],
+ 'ename': [u'\uc0bc\uc131SDI'],
+ 'percent': [u'-0.57\uff05'],
+ 'rmoney': u'72,773',
+ 'stock': [u'174,000'],
+ 'time': '13:55:11',
+ 'trade': u'423,512',
+ 'trade_rate': [u'(36%)'],
+ 'updown': [u'1,000']}
+2018-02-06 13:55:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=032830>
+{'ecode': [u'032830'],
+ 'ename': [u'\uc0bc\uc131\uc0dd\uba85'],
+ 'percent': [u'-1.95\uff05'],
+ 'rmoney': u'29,783',
+ 'stock': [u'125,500'],
+ 'time': '13:55:11',
+ 'trade': u'234,864',
+ 'trade_rate': [u'(67%)'],
+ 'updown': [u'2,500']}
+2018-02-06 13:55:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=018260> (referer: None)
+2018-02-06 13:55:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=018260>
+{'ecode': [u'018260'],
+ 'ename': [u'\uc0bc\uc131\uc5d0\uc2a4\ub514\uc5d0\uc2a4'],
+ 'percent': [u'-4.28\uff05'],
+ 'rmoney': u'50,458',
+ 'stock': [u'235,000'],
+ 'time': '13:55:11',
+ 'trade': u'214,453',
+ 'trade_rate': [u'(102%)'],
+ 'updown': [u'10,500']}
+2018-02-06 13:55:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=002270> (referer: None)
+2018-02-06 13:55:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=009150> (referer: None)
+2018-02-06 13:55:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=002270>
+{'ecode': [u'002270'],
+ 'ename': [u'\ub86f\ub370\ud478\ub4dc'],
+ 'percent': [u'-3.26\uff05'],
+ 'rmoney': u'968',
+ 'stock': [u'593,000'],
+ 'time': '13:55:12',
+ 'trade': u'1,624',
+ 'trade_rate': [u'(104%)'],
+ 'updown': [u'20,000']}
+2018-02-06 13:55:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=009150>
+{'ecode': [u'009150'],
+ 'ename': [u'\uc0bc\uc131\uc804\uae30'],
+ 'percent': [u'-3.33\uff05'],
+ 'rmoney': u'67,979',
+ 'stock': [u'95,900'],
+ 'time': '13:55:12',
+ 'trade': u'709,631',
+ 'trade_rate': [u'(78%)'],
+ 'updown': [u'3,300']}
+2018-02-06 13:55:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=005930> (referer: None)
+2018-02-06 13:55:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=011170> (referer: None)
+2018-02-06 13:55:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=005930>
+{'ecode': [u'005930'],
+ 'ename': [u'\uc0bc\uc131\uc804\uc790'],
+ 'percent': [u'-2.09\uff05'],
+ 'rmoney': u'615,536',
+ 'stock': [u'2,346,000'],
+ 'time': '13:55:12',
+ 'trade': u'262,139',
+ 'trade_rate': [u'(46%)'],
+ 'updown': [u'50,000']}
+2018-02-06 13:55:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=011170>
+{'ecode': [u'011170'],
+ 'ename': [u'\ub86f\ub370\ucf00\ubbf8\uce7c'],
+ 'percent': [u'-1.32\uff05'],
+ 'rmoney': u'43,728',
+ 'stock': [u'410,500'],
+ 'time': '13:55:12',
+ 'trade': u'108,535',
+ 'trade_rate': [u'(71%)'],
+ 'updown': [u'5,500']}
+2018-02-06 13:55:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=016360> (referer: None)
+2018-02-06 13:55:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=016360>
+{'ecode': [u'016360'],
+ 'ename': [u'\uc0bc\uc131\uc99d\uad8c'],
+ 'percent': [u'-2.98\uff05'],
+ 'rmoney': u'25,776',
+ 'stock': [u'40,700'],
+ 'time': '13:55:12',
+ 'trade': u'638,206',
+ 'trade_rate': [u'(118%)'],
+ 'updown': [u'1,250']}
+2018-02-06 13:55:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=028260> (referer: None)
+2018-02-06 13:55:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=028260>
+{'ecode': [u'028260'],
+ 'ename': [u'\uc0bc\uc131\ubb3c\uc0b0'],
+ 'percent': [u'-3.85\uff05'],
+ 'rmoney': u'92,645',
+ 'stock': [u'137,500'],
+ 'time': '13:55:14',
+ 'trade': u'670,033',
+ 'trade_rate': [u'(47%)'],
+ 'updown': [u'5,500']}
+2018-02-06 13:55:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000810> (referer: None)
+2018-02-06 13:55:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000810>
+{'ecode': [u'000810'],
+ 'ename': [u'\uc0bc\uc131\ud654\uc7ac'],
+ 'percent': [u'-1.53\uff05'],
+ 'rmoney': u'18,244',
+ 'stock': [u'289,500'],
+ 'time': '13:55:14',
+ 'trade': u'62,475',
+ 'trade_rate': [u'(66%)'],
+ 'updown': [u'4,500']}
+2018-02-06 13:55:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=145990> (referer: None)
+2018-02-06 13:55:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000070> (referer: None)
+2018-02-06 13:55:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=145990>
+{'ecode': [u'145990'],
+ 'ename': [u'\uc0bc\uc591\uc0ac'],
+ 'percent': [u'+2.65\uff05'],
+ 'rmoney': u'4,957',
+ 'stock': [u'96,800'],
+ 'time': '13:55:14',
+ 'trade': u'52,511',
+ 'trade_rate': [u'(125%)'],
+ 'updown': [u'2,500']}
+2018-02-06 13:55:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000070>
+{'ecode': [u'000070'],
+ 'ename': [u'\uc0bc\uc591\ud640\ub529\uc2a4'],
+ 'percent': [u'+2.62\uff05'],
+ 'rmoney': u'5,998',
+ 'stock': [u'117,500'],
+ 'time': '13:55:14',
+ 'trade': u'52,641',
+ 'trade_rate': [u'(99%)'],
+ 'updown': [u'3,000']}
+2018-02-06 13:55:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=004490> (referer: None)
+2018-02-06 13:55:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=004490>
+{'ecode': [u'004490'],
+ 'ename': [u'\uc138\ubc29\uc804\uc9c0'],
+ 'percent': [u'-1.29\uff05'],
+ 'rmoney': u'454',
+ 'stock': [u'34,550'],
+ 'time': '13:55:14',
+ 'trade': u'13,131',
+ 'trade_rate': [u'(101%)'],
+ 'updown': [u'450']}
+2018-02-06 13:55:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=028050> (referer: None)
+2018-02-06 13:55:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=010140> (referer: None)
+2018-02-06 13:55:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=029780> (referer: None)
+2018-02-06 13:55:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=004370> (referer: None)
+2018-02-06 13:55:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=028050>
+{'ecode': [u'028050'],
+ 'ename': [u'\uc0bc\uc131\uc5d4\uc9c0\ub2c8\uc5b4\ub9c1'],
+ 'percent': [u'-3.59\uff05'],
+ 'rmoney': u'55,816',
+ 'stock': [u'16,100'],
+ 'time': '13:55:15',
+ 'trade': u'3,488,402',
+ 'trade_rate': [u'(85%)'],
+ 'updown': [u'600']}
+2018-02-06 13:55:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=029530> (referer: None)
+2018-02-06 13:55:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=004170> (referer: None)
+2018-02-06 13:55:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=010140>
+{'ecode': [u'010140'],
+ 'ename': [u'\uc0bc\uc131\uc911\uacf5\uc5c5'],
+ 'percent': [u'-5.98\uff05'],
+ 'rmoney': u'39,796',
+ 'stock': [u'8,650'],
+ 'time': '13:55:15',
+ 'trade': u'4,556,603',
+ 'trade_rate': [u'(94%)'],
+ 'updown': [u'550']}
+2018-02-06 13:55:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=029780>
+{'ecode': [u'029780'],
+ 'ename': [u'\uc0bc\uc131\uce74\ub4dc'],
+ 'percent': [u'-2.24\uff05'],
+ 'rmoney': u'6,437',
+ 'stock': [u'37,150'],
+ 'time': '13:55:15',
+ 'trade': u'172,782',
+ 'trade_rate': [u'(134%)'],
+ 'updown': [u'850']}
+2018-02-06 13:55:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=004370>
+{'ecode': [u'004370'],
+ 'ename': [u'\ub18d\uc2ec'],
+ 'percent': [u'-1.48\uff05'],
+ 'rmoney': u'9,054',
+ 'stock': [u'300,500'],
+ 'time': '13:55:15',
+ 'trade': u'30,037',
+ 'trade_rate': [u'(61%)'],
+ 'updown': [u'4,500']}
+2018-02-06 13:55:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=029530>
+{'ecode': [u'029530'],
+ 'ename': [u'\uc2e0\ub3c4\ub9ac\ucf54'],
+ 'percent': [u'-2.97\uff05'],
+ 'rmoney': u'633',
+ 'stock': [u'68,700'],
+ 'time': '13:55:15',
+ 'trade': u'9,124',
+ 'trade_rate': [u'(82%)'],
+ 'updown': [u'2,100']}
+2018-02-06 13:55:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=004170>
+{'ecode': [u'004170'],
+ 'ename': [u'\uc2e0\uc138\uacc4'],
+ 'percent': [u'+0.15\uff05'],
+ 'rmoney': u'25,044',
+ 'stock': [u'342,000'],
+ 'time': '13:55:15',
+ 'trade': u'75,741',
+ 'trade_rate': [u'(168%)'],
+ 'updown': [u'500']}
+2018-02-06 13:55:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=001430> (referer: None)
+2018-02-06 13:55:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=003620> (referer: None)
+2018-02-06 13:55:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=003410> (referer: None)
+2018-02-06 13:55:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=001430>
+{'ecode': [u'001430'],
+ 'ename': [u'\uc138\uc544\ubca0\uc2a4\ud2f8'],
+ 'percent': [u'-2.98\uff05'],
+ 'rmoney': u'1,584',
+ 'stock': [u'29,350'],
+ 'time': '13:55:15',
+ 'trade': u'53,551',
+ 'trade_rate': [u'(88%)'],
+ 'updown': [u'900']}
+2018-02-06 13:55:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=002790> (referer: None)
+2018-02-06 13:55:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=003620>
+{'ecode': [u'003620'],
+ 'ename': [u'\uc30d\uc6a9\ucc28'],
+ 'percent': [u'-2.63\uff05'],
+ 'rmoney': u'1,507',
+ 'stock': [u'5,560'],
+ 'time': '13:55:15',
+ 'trade': u'271,183',
+ 'trade_rate': [u'(99%)'],
+ 'updown': [u'150']}
+2018-02-06 13:55:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=090430> (referer: None)
+2018-02-06 13:55:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=003410>
+{'ecode': [u'003410'],
+ 'ename': [u'\uc30d\uc6a9\uc591\ud68c'],
+ 'percent': [u'+0.24\uff05'],
+ 'rmoney': u'2,550',
+ 'stock': [u'20,700'],
+ 'time': '13:55:15',
+ 'trade': u'125,137',
+ 'trade_rate': [u'(78%)'],
+ 'updown': [u'50']}
+2018-02-06 13:55:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=012750> (referer: None)
+2018-02-06 13:55:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=002790>
+{'ecode': [u'002790'],
+ 'ename': [u'\uc544\ubaa8\ub808G'],
+ 'percent': [u'-3.57\uff05'],
+ 'rmoney': u'10,009',
+ 'stock': [u'135,000'],
+ 'time': '13:55:15',
+ 'trade': u'74,257',
+ 'trade_rate': [u'(99%)'],
+ 'updown': [u'5,000']}
+2018-02-06 13:55:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=090430>
+{'ecode': [u'090430'],
+ 'ename': [u'\uc544\ubaa8\ub808\ud37c\uc2dc\ud53d'],
+ 'percent': [u'-3.01\uff05'],
+ 'rmoney': u'46,114',
+ 'stock': [u'290,500'],
+ 'time': '13:55:16',
+ 'trade': u'159,403',
+ 'trade_rate': [u'(96%)'],
+ 'updown': [u'9,000']}
+2018-02-06 13:55:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=012750>
+{'ecode': [u'012750'],
+ 'ename': [u'\uc5d0\uc2a4\uc6d0'],
+ 'percent': [u'-1.61\uff05'],
+ 'rmoney': u'5,989',
+ 'stock': [u'97,900'],
+ 'time': '13:55:16',
+ 'trade': u'60,766',
+ 'trade_rate': [u'(75%)'],
+ 'updown': [u'1,600']}
+2018-02-06 13:55:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=005850> (referer: None)
+2018-02-06 13:55:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=078520> (referer: None)
+2018-02-06 13:55:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=036570> (referer: None)
+2018-02-06 13:55:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=010780> (referer: None)
+2018-02-06 13:55:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=005850>
+{'ecode': [u'005850'],
+ 'ename': [u'\uc5d0\uc2a4\uc5d8'],
+ 'percent': [u'-2.21\uff05'],
+ 'rmoney': u'2,259',
+ 'stock': [u'26,500'],
+ 'time': '13:55:16',
+ 'trade': u'85,814',
+ 'trade_rate': [u'(80%)'],
+ 'updown': [u'600']}
+2018-02-06 13:55:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=111770> (referer: None)
+2018-02-06 13:55:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=078520>
+{'ecode': [u'078520'],
+ 'ename': [u'\uc5d0\uc774\ube14\uc528\uc5d4\uc528'],
+ 'percent': [u'-3.71\uff05'],
+ 'rmoney': u'2,004',
+ 'stock': [u'16,850'],
+ 'time': '13:55:16',
+ 'trade': u'119,415',
+ 'trade_rate': [u'(85%)'],
+ 'updown': [u'650']}
+2018-02-06 13:55:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=036570>
+{'ecode': [u'036570'],
+ 'ename': [u'\uc5d4\uc528\uc18c\ud504\ud2b8'],
+ 'percent': [u'-2.14\uff05'],
+ 'rmoney': u'47,644',
+ 'stock': [u'411,500'],
+ 'time': '13:55:16',
+ 'trade': u'116,407',
+ 'trade_rate': [u'(79%)'],
+ 'updown': [u'9,000']}
+2018-02-06 13:55:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000670> (referer: None)
+2018-02-06 13:55:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=010780>
+{'ecode': [u'010780'],
+ 'ename': [u'\uc544\uc774\uc5d0\uc2a4\ub3d9\uc11c'],
+ 'percent': [u'-2.42\uff05'],
+ 'rmoney': u'4,087',
+ 'stock': [u'36,250'],
+ 'time': '13:55:16',
+ 'trade': u'114,296',
+ 'trade_rate': [u'(154%)'],
+ 'updown': [u'900']}
+2018-02-06 13:55:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=111770>
+{'ecode': [u'111770'],
+ 'ename': [u'\uc601\uc6d0\ubb34\uc5ed'],
+ 'percent': [u'-3.95\uff05'],
+ 'rmoney': u'4,764',
+ 'stock': [u'30,400'],
+ 'time': '13:55:16',
+ 'trade': u'156,891',
+ 'trade_rate': [u'(152%)'],
+ 'updown': [u'1,250']}
+2018-02-06 13:55:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=007310> (referer: None)
+2018-02-06 13:55:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000670>
+{'ecode': [u'000670'],
+ 'ename': [u'\uc601\ud48d'],
+ 'percent': [u'-2.84\uff05'],
+ 'rmoney': u'2,560',
+ 'stock': [u'992,000'],
+ 'time': '13:55:16',
+ 'trade': u'2,568',
+ 'trade_rate': [u'(112%)'],
+ 'updown': [u'29,000']}
+2018-02-06 13:55:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=007310>
+{'ecode': [u'007310'],
+ 'ename': [u'\uc624\ub69c\uae30'],
+ 'percent': [u'-2.33\uff05'],
+ 'rmoney': u'3,054',
+ 'stock': [u'713,000'],
+ 'time': '13:55:16',
+ 'trade': u'4,289',
+ 'trade_rate': [u'(35%)'],
+ 'updown': [u'17,000']}
+2018-02-06 13:55:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=001800> (referer: None)
+2018-02-06 13:55:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=001800>
+{'ecode': [u'001800'],
+ 'ename': [u'\uc624\ub9ac\uc628\ud640\ub529\uc2a4'],
+ 'percent': [u'-2.91\uff05'],
+ 'rmoney': u'2,723',
+ 'stock': [u'26,700'],
+ 'time': '13:55:17',
+ 'trade': u'101,978',
+ 'trade_rate': [u'(62%)'],
+ 'updown': [u'800']}
+2018-02-06 13:55:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=033920> (referer: None)
+2018-02-06 13:55:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000100> (referer: None)
+2018-02-06 13:55:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=033920>
+{'ecode': [u'033920'],
+ 'ename': [u'\ubb34\ud559'],
+ 'percent': [u'-1.75\uff05'],
+ 'rmoney': u'1,047',
+ 'stock': [u'19,650'],
+ 'time': '13:55:17',
+ 'trade': u'53,571',
+ 'trade_rate': [u'(89%)'],
+ 'updown': [u'350']}
+2018-02-06 13:55:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000100>
+{'ecode': [u'000100'],
+ 'ename': [u'\uc720\ud55c\uc591\ud589'],
+ 'percent': [u'-3.21\uff05'],
+ 'rmoney': u'13,661',
+ 'stock': [u'211,000'],
+ 'time': '13:55:17',
+ 'trade': u'64,889',
+ 'trade_rate': [u'(89%)'],
+ 'updown': [u'7,000']}
+2018-02-06 13:55:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=003030> (referer: None)
+2018-02-06 13:55:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=003030>
+{'ecode': [u'003030'],
+ 'ename': [u'\uc138\uc544\uc81c\uac15'],
+ 'percent': [u'-2.39\uff05'],
+ 'rmoney': u'1,887',
+ 'stock': [u'102,000'],
+ 'time': '13:55:18',
+ 'trade': u'18,716',
+ 'trade_rate': [u'(83%)'],
+ 'updown': [u'2,500']}
+2018-02-06 13:55:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=007570> (referer: None)
+2018-02-06 13:55:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=055550> (referer: None)
+2018-02-06 13:55:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=020150> (referer: None)
+2018-02-06 13:55:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=007570>
+{'ecode': [u'007570'],
+ 'ename': [u'\uc77c\uc591\uc57d\ud488'],
+ 'percent': [u'-3.74\uff05'],
+ 'rmoney': u'7,459',
+ 'stock': [u'37,350'],
+ 'time': '13:55:18',
+ 'trade': u'201,636',
+ 'trade_rate': [u'(86%)'],
+ 'updown': [u'1,450']}
+2018-02-06 13:55:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=055550>
+{'ecode': [u'055550'],
+ 'ename': [u'\uc2e0\ud55c\uc9c0\uc8fc'],
+ 'percent': [u'-4.57\uff05'],
+ 'rmoney': u'37,466',
+ 'stock': [u'50,100'],
+ 'time': '13:55:18',
+ 'trade': u'740,274',
+ 'trade_rate': [u'(91%)'],
+ 'updown': [u'2,400']}
+2018-02-06 13:55:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=030000> (referer: None)
+2018-02-06 13:55:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=020150>
+{'ecode': [u'020150'],
+ 'ename': [u'\uc77c\uc9c4\uba38\ud2f0\ub9ac\uc5bc\uc988'],
+ 'percent': [u'-3.53\uff05'],
+ 'rmoney': u'20,137',
+ 'stock': [u'34,200'],
+ 'time': '13:55:19',
+ 'trade': u'601,526',
+ 'trade_rate': [u'(112%)'],
+ 'updown': [u'1,250']}
+2018-02-06 13:55:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=185750> (referer: None)
+2018-02-06 13:55:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=030000>
+{'ecode': [u'030000'],
+ 'ename': [u'\uc81c\uc77c\uae30\ud68d'],
+ 'percent': [u'-2.46\uff05'],
+ 'rmoney': u'7,894',
+ 'stock': [u'19,850'],
+ 'time': '13:55:19',
+ 'trade': u'399,015',
+ 'trade_rate': [u'(63%)'],
+ 'updown': [u'500']}
+2018-02-06 13:55:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=120110> (referer: None)
+2018-02-06 13:55:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=185750>
+{'ecode': [u'185750'],
+ 'ename': [u'\uc885\uadfc\ub2f9'],
+ 'percent': [u'-6.18\uff05'],
+ 'rmoney': u'9,229',
+ 'stock': [u'129,000'],
+ 'time': '13:55:19',
+ 'trade': u'71,878',
+ 'trade_rate': [u'(134%)'],
+ 'updown': [u'8,500']}
+2018-02-06 13:55:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=021240> (referer: None)
+2018-02-06 13:55:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=120110>
+{'ecode': [u'120110'],
+ 'ename': [u'\ucf54\uc624\ub871\uc778\ub354'],
+ 'percent': [u'-2.75\uff05'],
+ 'rmoney': u'18,884',
+ 'stock': [u'74,300'],
+ 'time': '13:55:19',
+ 'trade': u'257,285',
+ 'trade_rate': [u'(115%)'],
+ 'updown': [u'2,100']}
+2018-02-06 13:55:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=192400> (referer: None)
+2018-02-06 13:55:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=021240>
+{'ecode': [u'021240'],
+ 'ename': [u'\ucf54\uc6e8\uc774'],
+ 'percent': [u'-2.39\uff05'],
+ 'rmoney': u'14,188',
+ 'stock': [u'89,900'],
+ 'time': '13:55:19',
+ 'trade': u'158,168',
+ 'trade_rate': [u'(120%)'],
+ 'updown': [u'2,200']}
+2018-02-06 13:55:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000030> (referer: None)
+2018-02-06 13:55:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=003240> (referer: None)
+2018-02-06 13:55:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=192400>
+{'ecode': [u'192400'],
+ 'ename': [u'\ucfe0\ucfe0\ud640\ub529\uc2a4'],
+ 'percent': [u'-1.77\uff05'],
+ 'rmoney': u'1,398',
+ 'stock': [u'94,600'],
+ 'time': '13:55:19',
+ 'trade': u'14,779',
+ 'trade_rate': [u'(105%)'],
+ 'updown': [u'1,700']}
+2018-02-06 13:55:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000030>
+{'ecode': [u'000030'],
+ 'ename': [u'\uc6b0\ub9ac\uc740\ud589'],
+ 'percent': [u'-3.87\uff05'],
+ 'rmoney': u'24,880',
+ 'stock': [u'16,150'],
+ 'time': '13:55:19',
+ 'trade': u'1,527,909',
+ 'trade_rate': [u'(128%)'],
+ 'updown': [u'650']}
+2018-02-06 13:55:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=036580> (referer: None)
+2018-02-06 13:55:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=047050> (referer: None)
+2018-02-06 13:55:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=003240>
+{'ecode': [u'003240'],
+ 'ename': [u'\ud0dc\uad11\uc0b0\uc5c5'],
+ 'percent': [u'+0.07\uff05'],
+ 'rmoney': u'1,184',
+ 'stock': [u'1,346,000'],
+ 'time': '13:55:19',
+ 'trade': u'889',
+ 'trade_rate': [u'(126%)'],
+ 'updown': [u'1,000']}
+2018-02-06 13:55:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=036580>
+{'ecode': [u'036580'],
+ 'ename': [u'\ud31c\uc2a4\ucf54'],
+ 'percent': [u'-1.95\uff05'],
+ 'rmoney': u'737',
+ 'stock': [u'12,550'],
+ 'time': '13:55:19',
+ 'trade': u'59,036',
+ 'trade_rate': [u'(113%)'],
+ 'updown': [u'250']}
+2018-02-06 13:55:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=047050>
+{'ecode': [u'047050'],
+ 'ename': [u'\ud3ec\uc2a4\ucf54\ub300\uc6b0'],
+ 'percent': [u'-5.21\uff05'],
+ 'rmoney': u'15,394',
+ 'stock': [u'22,750'],
+ 'time': '13:55:19',
+ 'trade': u'678,345',
+ 'trade_rate': [u'(132%)'],
+ 'updown': [u'1,250']}
+2018-02-06 13:55:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=103140> (referer: None)
+2018-02-06 13:55:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=103140>
+{'ecode': [u'103140'],
+ 'ename': [u'\ud48d\uc0b0'],
+ 'percent': [u'-1.93\uff05'],
+ 'rmoney': u'8,730',
+ 'stock': [u'43,200'],
+ 'time': '13:55:19',
+ 'trade': u'204,154',
+ 'trade_rate': [u'(50%)'],
+ 'updown': [u'850']}
+2018-02-06 13:55:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000080> (referer: None)
+2018-02-06 13:55:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=014830> (referer: None)
+2018-02-06 13:55:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000080>
+{'ecode': [u'000080'],
+ 'ename': [u'\ud558\uc774\ud2b8\uc9c4\ub85c'],
+ 'percent': [u'-2.68\uff05'],
+ 'rmoney': u'4,382',
+ 'stock': [u'21,750'],
+ 'time': '13:55:20',
+ 'trade': u'202,040',
+ 'trade_rate': [u'(110%)'],
+ 'updown': [u'600']}
+2018-02-06 13:55:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=003520> (referer: None)
+2018-02-06 13:55:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=036460> (referer: None)
+2018-02-06 13:55:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=014830>
+{'ecode': [u'014830'],
+ 'ename': [u'\uc720\ub2c8\ub4dc'],
+ 'percent': [u'-2.77\uff05'],
+ 'rmoney': u'1,141',
+ 'stock': [u'45,650'],
+ 'time': '13:55:20',
+ 'trade': u'25,058',
+ 'trade_rate': [u'(89%)'],
+ 'updown': [u'1,300']}
+2018-02-06 13:55:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=071050> (referer: None)
+2018-02-06 13:55:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=003520>
+{'ecode': [u'003520'],
+ 'ename': [u'\uc601\uc9c4\uc57d\ud488'],
+ 'percent': [u'-3.63\uff05'],
+ 'rmoney': u'21,717',
+ 'stock': [u'9,030'],
+ 'time': '13:55:20',
+ 'trade': u'2,412,180',
+ 'trade_rate': [u'(70%)'],
+ 'updown': [u'340']}
+2018-02-06 13:55:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=036460>
+{'ecode': [u'036460'],
+ 'ename': [u'\ud55c\uad6d\uac00\uc2a4\uacf5\uc0ac'],
+ 'percent': [u'-1.96\uff05'],
+ 'rmoney': u'10,411',
+ 'stock': [u'47,450'],
+ 'time': '13:55:20',
+ 'trade': u'221,461',
+ 'trade_rate': [u'(93%)'],
+ 'updown': [u'950']}
+2018-02-06 13:55:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=071050>
+{'ecode': [u'071050'],
+ 'ename': [u'\ud55c\uad6d\uae08\uc735\uc9c0\uc8fc'],
+ 'percent': [u'-1.22\uff05'],
+ 'rmoney': u'21,290',
+ 'stock': [u'80,900'],
+ 'time': '13:55:20',
+ 'trade': u'269,417',
+ 'trade_rate': [u'(65%)'],
+ 'updown': [u'1,000']}
+2018-02-06 13:55:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=002960> (referer: None)
+2018-02-06 13:55:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=015760> (referer: None)
+2018-02-06 13:55:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=002960>
+{'ecode': [u'002960'],
+ 'ename': [u'\ud55c\uad6d\uc258\uc11d\uc720'],
+ 'percent': [u'-1.60\uff05'],
+ 'rmoney': u'1,037',
+ 'stock': [u'370,000'],
+ 'time': '13:55:20',
+ 'trade': u'2,793',
+ 'trade_rate': [u'(105%)'],
+ 'updown': [u'6,000']}
+2018-02-06 13:55:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=015760>
+{'ecode': [u'015760'],
+ 'ename': [u'\ud55c\uad6d\uc804\ub825'],
+ 'percent': [u'-1.39\uff05'],
+ 'rmoney': u'35,680',
+ 'stock': [u'35,600'],
+ 'time': '13:55:20',
+ 'trade': u'1,002,517',
+ 'trade_rate': [u'(47%)'],
+ 'updown': [u'500']}
+2018-02-06 13:55:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=161890> (referer: None)
+2018-02-06 13:55:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=161890>
+{'ecode': [u'161890'],
+ 'ename': [u'\ud55c\uad6d\ucf5c\ub9c8'],
+ 'percent': [u'-4.69\uff05'],
+ 'rmoney': u'7,901',
+ 'stock': [u'85,400'],
+ 'time': '13:55:20',
+ 'trade': u'92,674',
+ 'trade_rate': [u'(94%)'],
+ 'updown': [u'4,200']}
+2018-02-06 13:55:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000240> (referer: None)
+2018-02-06 13:55:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=047810> (referer: None)
+2018-02-06 13:55:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000240>
+{'ecode': [u'000240'],
+ 'ename': [u'\ud55c\uad6d\ud0c0\uc774\uc5b4\uc6d4\ub4dc\uc640\uc774\ub4dc'],
+ 'percent': [u'-1.00\uff05'],
+ 'rmoney': u'1,574',
+ 'stock': [u'19,800'],
+ 'time': '13:55:20',
+ 'trade': u'79,638',
+ 'trade_rate': [u'(72%)'],
+ 'updown': [u'200']}
+2018-02-06 13:55:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=047810>
+{'ecode': [u'047810'],
+ 'ename': [u'\ud55c\uad6d\ud56d\uacf5\uc6b0\uc8fc'],
+ 'percent': [u'-2.86\uff05'],
+ 'rmoney': u'42,476',
+ 'stock': [u'47,550'],
+ 'time': '13:55:20',
+ 'trade': u'895,344',
+ 'trade_rate': [u'(118%)'],
+ 'updown': [u'1,400']}
+2018-02-06 13:55:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=192820> (referer: None)
+2018-02-06 13:55:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=008930> (referer: None)
+2018-02-06 13:55:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=128940> (referer: None)
+2018-02-06 13:55:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=192820>
+{'ecode': [u'192820'],
+ 'ename': [u'\ucf54\uc2a4\ub9e5\uc2a4'],
+ 'percent': [u'-4.25\uff05'],
+ 'rmoney': u'20,286',
+ 'stock': [u'124,000'],
+ 'time': '13:55:21',
+ 'trade': u'167,152',
+ 'trade_rate': [u'(315%)'],
+ 'updown': [u'5,500']}
+2018-02-06 13:55:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=008930>
+{'ecode': [u'008930'],
+ 'ename': [u'\ud55c\ubbf8\uc0ac\uc774\uc5b8\uc2a4'],
+ 'percent': [u'+1.78\uff05'],
+ 'rmoney': u'20,387',
+ 'stock': [u'97,100'],
+ 'time': '13:55:21',
+ 'trade': u'208,995',
+ 'trade_rate': [u'(112%)'],
+ 'updown': [u'1,700']}
+2018-02-06 13:55:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=128940>
+{'ecode': [u'128940'],
+ 'ename': [u'\ud55c\ubbf8\uc57d\ud488'],
+ 'percent': [u'+3.45\uff05'],
+ 'rmoney': u'93,777',
+ 'stock': [u'539,000'],
+ 'time': '13:55:21',
+ 'trade': u'173,876',
+ 'trade_rate': [u'(131%)'],
+ 'updown': [u'18,000']}
+2018-02-06 13:55:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=009240> (referer: None)
+2018-02-06 13:55:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=009240>
+{'ecode': [u'009240'],
+ 'ename': [u'\ud55c\uc0d8'],
+ 'percent': [u'-8.04\uff05'],
+ 'rmoney': u'27,862',
+ 'stock': [u'154,500'],
+ 'time': '13:55:21',
+ 'trade': u'180,053',
+ 'trade_rate': [u'(344%)'],
+ 'updown': [u'13,500']}
+2018-02-06 13:55:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=020000> (referer: None)
+2018-02-06 13:55:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=020000>
+{'ecode': [u'020000'],
+ 'ename': [u'\ud55c\uc12c'],
+ 'percent': [u'-2.07\uff05'],
+ 'rmoney': u'1,895',
+ 'stock': [u'30,800'],
+ 'time': '13:55:22',
+ 'trade': u'62,000',
+ 'trade_rate': [u'(152%)'],
+ 'updown': [u'650']}
+2018-02-06 13:55:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=105630> (referer: None)
+2018-02-06 13:55:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=105630>
+{'ecode': [u'105630'],
+ 'ename': [u'\ud55c\uc138\uc2e4\uc5c5'],
+ 'percent': [u'-3.45\uff05'],
+ 'rmoney': u'3,880',
+ 'stock': [u'25,200'],
+ 'time': '13:55:22',
+ 'trade': u'152,818',
+ 'trade_rate': [u'(90%)'],
+ 'updown': [u'900']}
+2018-02-06 13:55:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=051900> (referer: None)
+2018-02-06 13:55:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=051900>
+{'ecode': [u'051900'],
+ 'ename': [u'LG\uc0dd\ud65c\uac74\uac15'],
+ 'percent': [u'-3.24\uff05'],
+ 'rmoney': u'23,395',
+ 'stock': [u'1,105,000'],
+ 'time': '13:55:22',
+ 'trade': u'21,055',
+ 'trade_rate': [u'(73%)'],
+ 'updown': [u'37,000']}
+2018-02-06 13:55:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=014680> (referer: None)
+2018-02-06 13:55:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=014680>
+{'ecode': [u'014680'],
+ 'ename': [u'\ud55c\uc194\ucf00\ubbf8\uce7c'],
+ 'percent': [u'-1.17\uff05'],
+ 'rmoney': u'7,076',
+ 'stock': [u'67,500'],
+ 'time': '13:55:23',
+ 'trade': u'106,554',
+ 'trade_rate': [u'(94%)'],
+ 'updown': [u'800']}
+2018-02-06 13:55:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=018880> (referer: None)
+2018-02-06 13:55:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=009420> (referer: None)
+2018-02-06 13:55:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=018880>
+{'ecode': [u'018880'],
+ 'ename': [u'\ud55c\uc628\uc2dc\uc2a4\ud15c'],
+ 'percent': [u'-2.96\uff05'],
+ 'rmoney': u'9,146',
+ 'stock': [u'13,100'],
+ 'time': '13:55:23',
+ 'trade': u'697,640',
+ 'trade_rate': [u'(71%)'],
+ 'updown': [u'400']}
+2018-02-06 13:55:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=009420>
+{'ecode': [u'009420'],
+ 'ename': [u'\ud55c\uc62c\ubc14\uc774\uc624\ud30c\ub9c8'],
+ 'percent': [u'-4.28\uff05'],
+ 'rmoney': u'80,995',
+ 'stock': [u'30,200'],
+ 'time': '13:55:23',
+ 'trade': u'2,717,130',
+ 'trade_rate': [u'(134%)'],
+ 'updown': [u'1,350']}
+2018-02-06 13:55:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=003300> (referer: None)
+2018-02-06 13:55:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=003300>
+{'ecode': [u'003300'],
+ 'ename': [u'\ud55c\uc77c\uc2dc\uba58\ud2b8'],
+ 'percent': [u'-4.00\uff05'],
+ 'rmoney': u'1,178',
+ 'stock': [u'144,000'],
+ 'time': '13:55:23',
+ 'trade': u'8,099',
+ 'trade_rate': [u'(68%)'],
+ 'updown': [u'6,000']}
+2018-02-06 13:55:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=060980> (referer: None)
+2018-02-06 13:55:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=052690> (referer: None)
+2018-02-06 13:55:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=060980>
+{'ecode': [u'060980'],
+ 'ename': [u'\ud55c\ub77c\ud640\ub529\uc2a4'],
+ 'percent': [u'-1.33\uff05'],
+ 'rmoney': u'1,684',
+ 'stock': [u'59,500'],
+ 'time': '13:55:24',
+ 'trade': u'28,252',
+ 'trade_rate': [u'(83%)'],
+ 'updown': [u'800']}
+2018-02-06 13:55:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=052690>
+{'ecode': [u'052690'],
+ 'ename': [u'\ud55c\uc804\uae30\uc220'],
+ 'percent': [u'-4.77\uff05'],
+ 'rmoney': u'2,332',
+ 'stock': [u'21,950'],
+ 'time': '13:55:24',
+ 'trade': u'105,974',
+ 'trade_rate': [u'(112%)'],
+ 'updown': [u'1,100']}
+2018-02-06 13:55:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=097230> (referer: None)
+2018-02-06 13:55:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=097230>
+{'ecode': [u'097230'],
+ 'ename': [u'\ud55c\uc9c4\uc911\uacf5\uc5c5'],
+ 'percent': [u'-4.19\uff05'],
+ 'rmoney': u'2,437',
+ 'stock': [u'3,430'],
+ 'time': '13:55:24',
+ 'trade': u'719,939',
+ 'trade_rate': [u'(203%)'],
+ 'updown': [u'150']}
+2018-02-06 13:55:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=051600> (referer: None)
+2018-02-06 13:55:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=004710> (referer: None)
+2018-02-06 13:55:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=051600>
+{'ecode': [u'051600'],
+ 'ename': [u'\ud55c\uc804KPS'],
+ 'percent': [u'0.00\uff05'],
+ 'rmoney': u'5,544',
+ 'stock': [u'39,300'],
+ 'time': '13:55:24',
+ 'trade': u'142,477',
+ 'trade_rate': [u'(75%)'],
+ 'updown': [u'0']}
+2018-02-06 13:55:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=004710>
+{'ecode': [u'004710'],
+ 'ename': [u'\ud55c\uc194\ud14c\ud06c\ub2c9\uc2a4'],
+ 'percent': [u'-5.26\uff05'],
+ 'rmoney': u'6,031',
+ 'stock': [u'14,400'],
+ 'time': '13:55:24',
+ 'trade': u'417,320',
+ 'trade_rate': [u'(132%)'],
+ 'updown': [u'800']}
+2018-02-06 13:55:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=161390> (referer: None)
+2018-02-06 13:55:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=009830> (referer: None)
+2018-02-06 13:55:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=025540> (referer: None)
+2018-02-06 13:55:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000880> (referer: None)
+2018-02-06 13:55:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=088350> (referer: None)
+2018-02-06 13:55:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=161390>
+{'ecode': [u'161390'],
+ 'ename': [u'\ud55c\uad6d\ud0c0\uc774\uc5b4'],
+ 'percent': [u'-2.47\uff05'],
+ 'rmoney': u'13,496',
+ 'stock': [u'55,300'],
+ 'time': '13:55:24',
+ 'trade': u'243,880',
+ 'trade_rate': [u'(34%)'],
+ 'updown': [u'1,400']}
+2018-02-06 13:55:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=009830>
+{'ecode': [u'009830'],
+ 'ename': [u'\ud55c\ud654\ucf00\ubbf8\uce7c'],
+ 'percent': [u'-2.50\uff05'],
+ 'rmoney': u'29,590',
+ 'stock': [u'33,150'],
+ 'time': '13:55:24',
+ 'trade': u'897,599',
+ 'trade_rate': [u'(116%)'],
+ 'updown': [u'850']}
+2018-02-06 13:55:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000720> (referer: None)
+2018-02-06 13:55:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=025540>
+{'ecode': [u'025540'],
+ 'ename': [u'\ud55c\uad6d\ub2e8\uc790'],
+ 'percent': [u'-1.21\uff05'],
+ 'rmoney': u'760',
+ 'stock': [u'65,200'],
+ 'time': '13:55:24',
+ 'trade': u'11,622',
+ 'trade_rate': [u'(82%)'],
+ 'updown': [u'800']}
+2018-02-06 13:55:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000880>
+{'ecode': [u'000880'],
+ 'ename': [u'\ud55c\ud654'],
+ 'percent': [u'-3.74\uff05'],
+ 'rmoney': u'11,322',
+ 'stock': [u'43,800'],
+ 'time': '13:55:24',
+ 'trade': u'258,760',
+ 'trade_rate': [u'(164%)'],
+ 'updown': [u'1,700']}
+2018-02-06 13:55:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=088350>
+{'ecode': [u'088350'],
+ 'ename': [u'\ud55c\ud654\uc0dd\uba85'],
+ 'percent': [u'-3.71\uff05'],
+ 'rmoney': u'7,164',
+ 'stock': [u'7,000'],
+ 'time': '13:55:24',
+ 'trade': u'1,013,613',
+ 'trade_rate': [u'(66%)'],
+ 'updown': [u'270']}
+2018-02-06 13:55:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=086280> (referer: None)
+2018-02-06 13:55:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=005440> (referer: None)
+2018-02-06 13:55:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000720>
+{'ecode': [u'000720'],
+ 'ename': [u'\ud604\ub300\uac74\uc124'],
+ 'percent': [u'-1.38\uff05'],
+ 'rmoney': u'29,476',
+ 'stock': [u'42,850'],
+ 'time': '13:55:24',
+ 'trade': u'695,307',
+ 'trade_rate': [u'(61%)'],
+ 'updown': [u'600']}
+2018-02-06 13:55:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=064350> (referer: None)
+2018-02-06 13:55:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=012330> (referer: None)
+2018-02-06 13:55:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=086280>
+{'ecode': [u'086280'],
+ 'ename': [u'\ud604\ub300\uae00\ub85c\ube44\uc2a4'],
+ 'percent': [u'-2.06\uff05'],
+ 'rmoney': u'14,389',
+ 'stock': [u'142,500'],
+ 'time': '13:55:25',
+ 'trade': u'101,263',
+ 'trade_rate': [u'(44%)'],
+ 'updown': [u'3,000']}
+2018-02-06 13:55:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=079430> (referer: None)
+2018-02-06 13:55:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=005440>
+{'ecode': [u'005440'],
+ 'ename': [u'\ud604\ub300\uadf8\ub9b0\ud478\ub4dc'],
+ 'percent': [u'-1.60\uff05'],
+ 'rmoney': u'2,822',
+ 'stock': [u'15,350'],
+ 'time': '13:55:25',
+ 'trade': u'184,484',
+ 'trade_rate': [u'(63%)'],
+ 'updown': [u'250']}
+2018-02-06 13:55:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=064350>
+{'ecode': [u'064350'],
+ 'ename': [u'\ud604\ub300\ub85c\ud15c'],
+ 'percent': [u'-4.02\uff05'],
+ 'rmoney': u'5,954',
+ 'stock': [u'15,500'],
+ 'time': '13:55:25',
+ 'trade': u'380,699',
+ 'trade_rate': [u'(74%)'],
+ 'updown': [u'650']}
+2018-02-06 13:55:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=012330>
+{'ecode': [u'012330'],
+ 'ename': [u'\ud604\ub300\ubaa8\ube44\uc2a4'],
+ 'percent': [u'-2.01\uff05'],
+ 'rmoney': u'48,507',
+ 'stock': [u'243,500'],
+ 'time': '13:55:25',
+ 'trade': u'198,458',
+ 'trade_rate': [u'(81%)'],
+ 'updown': [u'5,000']}
+2018-02-06 13:55:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=012630> (referer: None)
+2018-02-06 13:55:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=079430>
+{'ecode': [u'079430'],
+ 'ename': [u'\ud604\ub300\ub9ac\ubc14\ud2b8'],
+ 'percent': [u'-4.09\uff05'],
+ 'rmoney': u'4,070',
+ 'stock': [u'27,000'],
+ 'time': '13:55:25',
+ 'trade': u'151,825',
+ 'trade_rate': [u'(148%)'],
+ 'updown': [u'1,150']}
+2018-02-06 13:55:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=011210> (referer: None)
+2018-02-06 13:55:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=004020> (referer: None)
+2018-02-06 13:55:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=012630>
+{'ecode': [u'012630'],
+ 'ename': [u'\ud604\ub300\uc0b0\uc5c5'],
+ 'percent': [u'-4.52\uff05'],
+ 'rmoney': u'11,594',
+ 'stock': [u'41,200'],
+ 'time': '13:55:25',
+ 'trade': u'278,921',
+ 'trade_rate': [u'(94%)'],
+ 'updown': [u'1,950']}
+2018-02-06 13:55:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=009540> (referer: None)
+2018-02-06 13:55:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=011210>
+{'ecode': [u'011210'],
+ 'ename': [u'\ud604\ub300\uc704\uc544'],
+ 'percent': [u'-3.41\uff05'],
+ 'rmoney': u'13,822',
+ 'stock': [u'59,400'],
+ 'time': '13:55:25',
+ 'trade': u'231,909',
+ 'trade_rate': [u'(142%)'],
+ 'updown': [u'2,100']}
+2018-02-06 13:55:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=004020>
+{'ecode': [u'004020'],
+ 'ename': [u'\ud604\ub300\uc81c\ucca0'],
+ 'percent': [u'-2.52\uff05'],
+ 'rmoney': u'22,772',
+ 'stock': [u'54,200'],
+ 'time': '13:55:25',
+ 'trade': u'419,055',
+ 'trade_rate': [u'(82%)'],
+ 'updown': [u'1,400']}
+2018-02-06 13:55:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=005380> (referer: None)
+2018-02-06 13:55:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=009540>
+{'ecode': [u'009540'],
+ 'ename': [u'\ud604\ub300\uc911\uacf5\uc5c5'],
+ 'percent': [u'-1.89\uff05'],
+ 'rmoney': u'28,990',
+ 'stock': [u'129,500'],
+ 'time': '13:55:25',
+ 'trade': u'226,279',
+ 'trade_rate': [u'(127%)'],
+ 'updown': [u'2,500']}
+2018-02-06 13:55:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=005380>
+{'ecode': [u'005380'],
+ 'ename': [u'\ud604\ub300\ucc28'],
+ 'percent': [u'-1.89\uff05'],
+ 'rmoney': u'68,868',
+ 'stock': [u'156,000'],
+ 'time': '13:55:25',
+ 'trade': u'439,134',
+ 'trade_rate': [u'(65%)'],
+ 'updown': [u'3,000']}
+2018-02-06 13:55:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=086790> (referer: None)
+2018-02-06 13:55:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=086790>
+{'ecode': [u'086790'],
+ 'ename': [u'\ud558\ub098\uae08\uc735\uc9c0\uc8fc'],
+ 'percent': [u'-5.83\uff05'],
+ 'rmoney': u'43,715',
+ 'stock': [u'50,100'],
+ 'time': '13:55:26',
+ 'trade': u'863,704',
+ 'trade_rate': [u'(62%)'],
+ 'updown': [u'3,100']}
+2018-02-06 13:55:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=010950> (referer: None)
+2018-02-06 13:55:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=008770> (referer: None)
+2018-02-06 13:55:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=010950>
+{'ecode': [u'010950'],
+ 'ename': [u'S-Oil'],
+ 'percent': [u'-2.88\uff05'],
+ 'rmoney': u'32,783',
+ 'stock': [u'118,000'],
+ 'time': '13:55:26',
+ 'trade': u'278,727',
+ 'trade_rate': [u'(75%)'],
+ 'updown': [u'3,500']}
+2018-02-06 13:55:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=004800> (referer: None)
+2018-02-06 13:55:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=008770>
+{'ecode': [u'008770'],
+ 'ename': [u'\ud638\ud154\uc2e0\ub77c'],
+ 'percent': [u'-3.41\uff05'],
+ 'rmoney': u'33,251',
+ 'stock': [u'87,800'],
+ 'time': '13:55:26',
+ 'trade': u'382,495',
+ 'trade_rate': [u'(77%)'],
+ 'updown': [u'3,100']}
+2018-02-06 13:55:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=004800>
+{'ecode': [u'004800'],
+ 'ename': [u'\ud6a8\uc131'],
+ 'percent': [u'-3.05\uff05'],
+ 'rmoney': u'18,579',
+ 'stock': [u'127,000'],
+ 'time': '13:55:26',
+ 'trade': u'146,604',
+ 'trade_rate': [u'(120%)'],
+ 'updown': [u'4,000']}
+2018-02-06 13:55:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=093370> (referer: None)
+2018-02-06 13:55:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=093370>
+{'ecode': [u'093370'],
+ 'ename': [u'\ud6c4\uc131'],
+ 'percent': [u'-2.52\uff05'],
+ 'rmoney': u'16,125',
+ 'stock': [u'9,660'],
+ 'time': '13:55:26',
+ 'trade': u'1,701,903',
+ 'trade_rate': [u'(84%)'],
+ 'updown': [u'250']}
+2018-02-06 13:55:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=069260> (referer: None)
+2018-02-06 13:55:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=069260>
+{'ecode': [u'069260'],
+ 'ename': [u'\ud734\ucf10\uc2a4'],
+ 'percent': [u'-2.42\uff05'],
+ 'rmoney': u'1,968',
+ 'stock': [u'24,200'],
+ 'time': '13:55:27',
+ 'trade': u'81,252',
+ 'trade_rate': [u'(114%)'],
+ 'updown': [u'600']}
+2018-02-06 13:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=000990> (referer: None)
+2018-02-06 13:55:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=000990>
+{'ecode': [u'000990'],
+ 'ename': [u'DB\ud558\uc774\ud14d'],
+ 'percent': [u'-2.56\uff05'],
+ 'rmoney': u'21,399',
+ 'stock': [u'15,200'],
+ 'time': '13:55:27',
+ 'trade': u'1,428,463',
+ 'trade_rate': [u'(110%)'],
+ 'updown': [u'400']}
+2018-02-06 13:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=012450> (referer: None)
+2018-02-06 13:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=005250> (referer: None)
+2018-02-06 13:55:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=012450>
+{'ecode': [u'012450'],
+ 'ename': [u'\ud55c\ud654\ud14c\ud06c\uc708'],
+ 'percent': [u'-3.98\uff05'],
+ 'rmoney': u'17,981',
+ 'stock': [u'30,150'],
+ 'time': '13:55:27',
+ 'trade': u'597,033',
+ 'trade_rate': [u'(58%)'],
+ 'updown': [u'1,250']}
+2018-02-06 13:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=010620> (referer: None)
+2018-02-06 13:55:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=005250>
+{'ecode': [u'005250'],
+ 'ename': [u'\ub179\uc2ed\uc790\ud640\ub529\uc2a4'],
+ 'percent': [u'-0.77\uff05'],
+ 'rmoney': u'3,565',
+ 'stock': [u'38,550'],
+ 'time': '13:55:27',
+ 'trade': u'93,551',
+ 'trade_rate': [u'(104%)'],
+ 'updown': [u'300']}
+2018-02-06 13:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=006840> (referer: None)
+2018-02-06 13:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=008560> (referer: None)
+2018-02-06 13:55:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=010620>
+{'ecode': [u'010620'],
+ 'ename': [u'\ud604\ub300\ubbf8\ud3ec\uc870\uc120'],
+ 'percent': [u'-1.42\uff05'],
+ 'rmoney': u'14,777',
+ 'stock': [u'104,500'],
+ 'time': '13:55:27',
+ 'trade': u'143,308',
+ 'trade_rate': [u'(94%)'],
+ 'updown': [u'1,500']}
+2018-02-06 13:55:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=006840>
+{'ecode': [u'006840'],
+ 'ename': [u'AK\ud640\ub529\uc2a4'],
+ 'percent': [u'-2.32\uff05'],
+ 'rmoney': u'1,848',
+ 'stock': [u'80,000'],
+ 'time': '13:55:27',
+ 'trade': u'23,504',
+ 'trade_rate': [u'(126%)'],
+ 'updown': [u'1,900']}
+2018-02-06 13:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=035720> (referer: None)
+2018-02-06 13:55:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=008560>
+{'ecode': [u'008560'],
+ 'ename': [u'\uba54\ub9ac\uce20\uc885\uae08\uc99d\uad8c'],
+ 'percent': [u'-1.97\uff05'],
+ 'rmoney': u'12,274',
+ 'stock': [u'4,970'],
+ 'time': '13:55:27',
+ 'trade': u'2,477,206',
+ 'trade_rate': [u'(96%)'],
+ 'updown': [u'100']}
+2018-02-06 13:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=026960> (referer: None)
+2018-02-06 13:55:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=035720>
+{'ecode': [u'035720'],
+ 'ename': [u'\uce74\uce74\uc624'],
+ 'percent': [u'-5.58\uff05'],
+ 'rmoney': u'177,035',
+ 'stock': [u'127,000'],
+ 'time': '13:55:27',
+ 'trade': u'1,391,884',
+ 'trade_rate': [u'(85%)'],
+ 'updown': [u'7,500']}
+2018-02-06 13:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=079160> (referer: None)
+2018-02-06 13:55:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=026960>
+{'ecode': [u'026960'],
+ 'ename': [u'\ub3d9\uc11c'],
+ 'percent': [u'-1.58\uff05'],
+ 'rmoney': u'2,308',
+ 'stock': [u'27,950'],
+ 'time': '13:55:27',
+ 'trade': u'82,901',
+ 'trade_rate': [u'(118%)'],
+ 'updown': [u'450']}
+2018-02-06 13:55:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=079160>
+{'ecode': [u'079160'],
+ 'ename': [u'CJ CGV'],
+ 'percent': [u'-4.13\uff05'],
+ 'rmoney': u'16,346',
+ 'stock': [u'69,700'],
+ 'time': '13:55:27',
+ 'trade': u'236,175',
+ 'trade_rate': [u'(144%)'],
+ 'updown': [u'3,000']}
+2018-02-06 13:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=079550> (referer: None)
+2018-02-06 13:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=096760> (referer: None)
+2018-02-06 13:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=207940> (referer: None)
+2018-02-06 13:55:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=079550>
+{'ecode': [u'079550'],
+ 'ename': [u'LIG\ub125\uc2a4\uc6d0'],
+ 'percent': [u'-2.58\uff05'],
+ 'rmoney': u'5,434',
+ 'stock': [u'52,900'],
+ 'time': '13:55:28',
+ 'trade': u'102,683',
+ 'trade_rate': [u'(46%)'],
+ 'updown': [u'1,400']}
+2018-02-06 13:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=251270> (referer: None)
+2018-02-06 13:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=214320> (referer: None)
+2018-02-06 13:55:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=096760>
+{'ecode': [u'096760'],
+ 'ename': [u'JW\ud640\ub529\uc2a4'],
+ 'percent': [u'-2.56\uff05'],
+ 'rmoney': u'2,228',
+ 'stock': [u'8,360'],
+ 'time': '13:55:28',
+ 'trade': u'268,660',
+ 'trade_rate': [u'(77%)'],
+ 'updown': [u'220']}
+2018-02-06 13:55:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=207940>
+{'ecode': [u'207940'],
+ 'ename': [u'\uc0bc\uc131\ubc14\uc774\uc624\ub85c\uc9c1\uc2a4'],
+ 'percent': [u'-4.11\uff05'],
+ 'rmoney': u'133,647',
+ 'stock': [u'408,500'],
+ 'time': '13:55:28',
+ 'trade': u'328,428',
+ 'trade_rate': [u'(136%)'],
+ 'updown': [u'17,500']}
+2018-02-06 13:55:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=251270>
+{'ecode': [u'251270'],
+ 'ename': [u'\ub137\ub9c8\ube14\uac8c\uc784\uc988'],
+ 'percent': [u'-4.97\uff05'],
+ 'rmoney': u'40,511',
+ 'stock': [u'153,000'],
+ 'time': '13:55:28',
+ 'trade': u'265,053',
+ 'trade_rate': [u'(103%)'],
+ 'updown': [u'8,000']}
+2018-02-06 13:55:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=214320>
+{'ecode': [u'214320'],
+ 'ename': [u'\uc774\ub178\uc158'],
+ 'percent': [u'-1.53\uff05'],
+ 'rmoney': u'1,803',
+ 'stock': [u'64,200'],
+ 'time': '13:55:28',
+ 'trade': u'28,173',
+ 'trade_rate': [u'(56%)'],
+ 'updown': [u'1,000']}
+2018-02-06 13:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=267250> (referer: None)
+2018-02-06 13:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=017800> (referer: None)
+2018-02-06 13:55:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=267250>
+{'ecode': [u'267250'],
+ 'ename': [u'\ud604\ub300\ub85c\ubcf4\ud2f1\uc2a4'],
+ 'percent': [u'-2.13\uff05'],
+ 'rmoney': u'17,519',
+ 'stock': [u'436,000'],
+ 'time': '13:55:28',
+ 'trade': u'40,337',
+ 'trade_rate': [u'(88%)'],
+ 'updown': [u'9,500']}
+2018-02-06 13:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=001450> (referer: None)
+2018-02-06 13:55:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=017800>
+{'ecode': [u'017800'],
+ 'ename': [u'\ud604\ub300\uc5d8\ub9ac\ubca0\uc774'],
+ 'percent': [u'-2.68\uff05'],
+ 'rmoney': u'6,449',
+ 'stock': [u'58,000'],
+ 'time': '13:55:28',
+ 'trade': u'111,747',
+ 'trade_rate': [u'(114%)'],
+ 'updown': [u'1,600']}
+2018-02-06 13:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=006360> (referer: None)
+2018-02-06 13:55:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=001450>
+{'ecode': [u'001450'],
+ 'ename': [u'\ud604\ub300\ud574\uc0c1'],
+ 'percent': [u'-4.27\uff05'],
+ 'rmoney': u'8,380',
+ 'stock': [u'43,750'],
+ 'time': '13:55:28',
+ 'trade': u'187,719',
+ 'trade_rate': [u'(102%)'],
+ 'updown': [u'1,950']}
+2018-02-06 13:55:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=006360>
+{'ecode': [u'006360'],
+ 'ename': [u'GS\uac74\uc124'],
+ 'percent': [u'-2.77\uff05'],
+ 'rmoney': u'13,901',
+ 'stock': [u'31,600'],
+ 'time': '13:55:28',
+ 'trade': u'443,096',
+ 'trade_rate': [u'(68%)'],
+ 'updown': [u'900']}
+2018-02-06 13:55:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=057050> (referer: None)
+2018-02-06 13:55:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=069960> (referer: None)
+2018-02-06 13:55:29 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=057050>
+{'ecode': [u'057050'],
+ 'ename': [u'\ud604\ub300\ud648\uc1fc\ud551'],
+ 'percent': [u'-2.59\uff05'],
+ 'rmoney': u'3,896',
+ 'stock': [u'113,000'],
+ 'time': '13:55:29',
+ 'trade': u'34,549',
+ 'trade_rate': [u'(117%)'],
+ 'updown': [u'3,000']}
+2018-02-06 13:55:29 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=069960>
+{'ecode': [u'069960'],
+ 'ename': [u'\ud604\ub300\ubc31\ud654\uc810'],
+ 'percent': [u'-2.20\uff05'],
+ 'rmoney': u'11,095',
+ 'stock': [u'97,700'],
+ 'time': '13:55:29',
+ 'trade': u'114,447',
+ 'trade_rate': [u'(92%)'],
+ 'updown': [u'2,200']}
+2018-02-06 13:55:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=282330> (referer: None)
+2018-02-06 13:55:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=282330>
+{'ecode': [u'282330'],
+ 'ename': [u'BGF\ub9ac\ud14c\uc77c'],
+ 'percent': [u'-0.94\uff05'],
+ 'rmoney': u'3,638',
+ 'stock': [u'210,000'],
+ 'time': '13:55:31',
+ 'trade': u'17,466',
+ 'trade_rate': [u'(71%)'],
+ 'updown': [u'2,000']}
+2018-02-06 13:55:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=028670> (referer: None)
+2018-02-06 13:55:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=271560> (referer: None)
+2018-02-06 13:55:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.daum.net/item/main.daum?code=285130> (referer: None)
+2018-02-06 13:55:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=028670>
+{'ecode': [u'028670'],
+ 'ename': [u'\ud32c\uc624\uc158'],
+ 'percent': [u'-2.85\uff05'],
+ 'rmoney': u'16,814',
+ 'stock': [u'5,460'],
+ 'time': '13:55:31',
+ 'trade': u'3,111,053',
+ 'trade_rate': [u'(104%)'],
+ 'updown': [u'160']}
+2018-02-06 13:55:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=271560>
+{'ecode': [u'271560'],
+ 'ename': [u'\uc624\ub9ac\uc628'],
+ 'percent': [u'-2.05\uff05'],
+ 'rmoney': u'9,939',
+ 'stock': [u'119,500'],
+ 'time': '13:55:31',
+ 'trade': u'83,311',
+ 'trade_rate': [u'(125%)'],
+ 'updown': [u'2,500']}
+2018-02-06 13:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.daum.net/item/main.daum?code=285130>
+{'ecode': [u'285130'],
+ 'ename': [u'SK\ucf00\ubbf8\uce7c'],
+ 'percent': [u'-2.83\uff05'],
+ 'rmoney': u'14,485',
+ 'stock': [u'99,600'],
+ 'time': '13:55:31',
+ 'trade': u'148,057',
+ 'trade_rate': [u'(109%)'],
+ 'updown': [u'2,900']}
+2018-02-06 13:56:02 [scrapy.extensions.logstats] INFO: Crawled 201 pages (at 201 pages/min), scraped 200 items (at 200 items/min)
+2018-02-06 13:57:02 [scrapy.extensions.logstats] INFO: Crawled 201 pages (at 0 pages/min), scraped 200 items (at 0 items/min)
+2018-02-06 13:57:25 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://files.hanmail.net/hanmail/error/error503.html> from <GET http://finance.daum.net/item/main.daum?code=139480>
+2018-02-06 13:57:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://files.hanmail.net/robots.txt> (referer: None)
+2018-02-06 13:57:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://files.hanmail.net/hanmail/error/error503.html> (referer: None)
+2018-02-06 13:57:25 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-02-06 13:57:25 [scrapy.extensions.feedexport] INFO: Stored json feed (200 items) in: store/2018-02/index_06-1355.json
+2018-02-06 13:57:25 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 55610,
+ 'downloader/request_count': 204,
+ 'downloader/request_method_count/GET': 204,
+ 'downloader/response_bytes': 6422848,
+ 'downloader/response_count': 204,
+ 'downloader/response_status_count/200': 203,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 2, 6, 4, 57, 25, 558404),
+ 'item_scraped_count': 200,
+ 'log_count/DEBUG': 405,
+ 'log_count/INFO': 10,
+ 'memusage/max': 120750080,
+ 'memusage/startup': 45453312,
+ 'response_received_count': 203,
+ 'scheduler/dequeued': 202,
+ 'scheduler/dequeued/memory': 202,
+ 'scheduler/enqueued': 202,
+ 'scheduler/enqueued/memory': 202,
+ 'start_time': datetime.datetime(2018, 2, 6, 4, 55, 2, 464663)}
+2018-02-06 13:57:25 [scrapy.core.engine] INFO: Spider closed (finished)
+주식실시간크롤링이 종료되었습니다.
+크롤링 데이터 수 : 
+200
