@@ -1,0 +1,6 @@
+#mkdir $(date '+%Y-%m-%d')
+#한국시간동기화
+#rdate -s time.bora.net
+
+#평일 매1분마다 다음주식 크롤링
+*/1 9-15 * * 1-5 cd scrapy/robonews; /root/scrapy/robonews/run_robonews.sh > /root/scrapy/robonews/log/$(date +\%Y-\%m)/index_$(date +\%d-\%H\%M).log 2>&1
