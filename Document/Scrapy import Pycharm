@@ -5,3 +5,5 @@ lxml pyOpenSSL Scrapy
 #Meassage "error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools"
 #Download URL : http://landinghub.visualstudio.com/visual-cpp-build-tools
 
+#windows scrapy install 
+#ref : http://uslifelog.tistory.com/45?category=620395
