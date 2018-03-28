@@ -7,3 +7,6 @@ lxml pyOpenSSL Scrapy
 
 #windows scrapy install 
 #ref : http://uslifelog.tistory.com/45?category=620395
+
+#crawling ex n
+https://github.com/yjucho1/crawling_blognames
